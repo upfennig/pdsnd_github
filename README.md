@@ -22,5 +22,11 @@ chicago.csv
 new-york-city.csv
 washington.csv
 
+###Tips
+When using R Studio for the first time, don't miss to checkout the following links:
+https://www.r-bloggers.com/some-useful-tricks-in-rstudio/
+http://www.cookbook-r.com
+https://google.github.io/styleguide/Rguide.xml
+
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
