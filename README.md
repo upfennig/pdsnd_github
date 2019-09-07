@@ -17,7 +17,10 @@ The data was analyzed with R Studio.
 The results of each hypothesis were displayed in a chart.
 
 ### Files used
-Include the files used
+3 .csv files used to conduct the analysis:
+chicago.csv
+new-york-city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
