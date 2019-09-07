@@ -1,17 +1,16 @@
 
+#Import data and rename data frame
 ny = read.csv('new_york_city.csv')
 wa = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
 
+#Load library required for data visualization
 library(ggplot2)
 
+#Conduct basic analysis
 head(chi)
-
 dim(chi)
-
 summary(chi)
-
-class(chi$Start.Time)
 
 head(ny)
 
