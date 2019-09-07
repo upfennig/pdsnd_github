@@ -22,7 +22,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: 1;
+  background-color: ebffff;
 }
 article,
 aside,
@@ -72,8 +73,9 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 4em;
   margin: 0.67em 0;
+  color: #ff0000;
 }
 mark {
   background: #ff0;
@@ -187,7 +189,7 @@ optgroup {
 }
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 1;
 }
 td,
 th {
@@ -241,6 +243,7 @@ th {
   h2,
   h3 {
     page-break-after: avoid;
+    color: #ff0000;
   }
   .navbar {
     display: none;
@@ -8451,15 +8454,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11236,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11679,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11715,7 +11718,7 @@ ul.typeahead-list > li > a {
 
     </style>
 <style type="text/css">
-    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when 
+    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when
 a notebook is open. this rule won't be applied when the notebook is not open (in 404 view for example) */
 body[data-notebook-name] #menubar-container #maintoolbar:not(.show-panel),
 body[data-notebook-name] #menubar-container ul.navbar-nav:not(.show-panel) {
@@ -11749,14 +11752,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11940,37 +11943,37 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre>       X                         Start.Time                  End.Time   
- Min.   :     36   2017-01-24 07:40:32:   2   2017-04-16 13:16:52:   2  
- 1st Qu.: 386722   2017-04-22 13:16:25:   2   2017-04-26 16:29:26:   2  
- Median : 773554   2017-05-27 15:17:50:   2   2017-05-21 16:20:56:   2  
- Mean   : 776721   2017-06-10 13:29:41:   2   2017-05-27 09:58:21:   2  
- 3rd Qu.:1171266   2017-06-20 17:05:11:   2   2017-06-25 14:51:35:   2  
- Max.   :1551248   2017-06-21 13:18:52:   2   2017-01-01 00:46:32:   1  
-                   (Other)            :8618   (Other)            :8619  
- Trip.Duration                          Start.Station 
- Min.   :   60.0   Streeter Dr &amp; Grand Ave     : 210  
- 1st Qu.:  394.2   Lake Shore Dr &amp; Monroe St   : 140  
- Median :  670.0   Clinton St &amp; Washington Blvd: 120  
- Mean   :  937.2   Clinton St &amp; Madison St     : 102  
- 3rd Qu.: 1119.0   Canal St &amp; Adams St         : 101  
- Max.   :85408.0   Michigan Ave &amp; Oak St       :  98  
-                   (Other)                     :7859  
-                       End.Station        User.Type       Gender    
- Streeter Dr &amp; Grand Ave     : 233             :   1         :1748  
- Clinton St &amp; Madison St     : 145   Customer  :1746   Female:1723  
- Theater on the Lake         : 131   Subscriber:6883   Male  :5159  
- Lake Shore Dr &amp; Monroe St   : 115                                  
- Clinton St &amp; Washington Blvd: 109                                  
- Lake Shore Dr &amp; North Blvd  : 102                                  
- (Other)                     :7795                                  
-   Birth.Year  
- Min.   :1899  
- 1st Qu.:1975  
- Median :1984  
- Mean   :1981  
- 3rd Qu.:1989  
- Max.   :2002  
+<pre>       X                         Start.Time                  End.Time
+ Min.   :     36   2017-01-24 07:40:32:   2   2017-04-16 13:16:52:   2
+ 1st Qu.: 386722   2017-04-22 13:16:25:   2   2017-04-26 16:29:26:   2
+ Median : 773554   2017-05-27 15:17:50:   2   2017-05-21 16:20:56:   2
+ Mean   : 776721   2017-06-10 13:29:41:   2   2017-05-27 09:58:21:   2
+ 3rd Qu.:1171266   2017-06-20 17:05:11:   2   2017-06-25 14:51:35:   2
+ Max.   :1551248   2017-06-21 13:18:52:   2   2017-01-01 00:46:32:   1
+                   (Other)            :8618   (Other)            :8619
+ Trip.Duration                          Start.Station
+ Min.   :   60.0   Streeter Dr &amp; Grand Ave     : 210
+ 1st Qu.:  394.2   Lake Shore Dr &amp; Monroe St   : 140
+ Median :  670.0   Clinton St &amp; Washington Blvd: 120
+ Mean   :  937.2   Clinton St &amp; Madison St     : 102
+ 3rd Qu.: 1119.0   Canal St &amp; Adams St         : 101
+ Max.   :85408.0   Michigan Ave &amp; Oak St       :  98
+                   (Other)                     :7859
+                       End.Station        User.Type       Gender
+ Streeter Dr &amp; Grand Ave     : 233             :   1         :1748
+ Clinton St &amp; Madison St     : 145   Customer  :1746   Female:1723
+ Theater on the Lake         : 131   Subscriber:6883   Male  :5159
+ Lake Shore Dr &amp; Monroe St   : 115
+ Clinton St &amp; Washington Blvd: 109
+ Lake Shore Dr &amp; North Blvd  : 102
+ (Other)                     :7795
+   Birth.Year
+ Min.   :1899
+ 1st Qu.:1975
+ Median :1984
+ Mean   :1981
+ 3rd Qu.:1989
+ Max.   :2002
  NA&#39;s   :1747  </pre>
 </div>
 
@@ -13258,7 +13261,7 @@ FAsAAAAgEzhjBwAAACATKOwAAAAAZAKFHQAAAIBMoLADAAAAkAkUdgAAAAAygcIOAAAAQCZQ
 
 
 <div class="output_text output_subarea ">
-<pre>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+<pre>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s
   18.00   31.00   38.00   40.79   49.00  134.00    5218 </pre>
 </div>
 
@@ -13292,7 +13295,7 @@ FAsAAAAgEzhjBwAAACATKOwAAAAAZAKFHQAAAIBMoLADAAAAkAkUdgAAAAAygcIOAAAAQCZQ
 
 
 <div class="output_text output_subarea ">
-<pre>     Min.   1st Qu.    Median      Mean   3rd Qu.      Max.      NA&#39;s 
+<pre>     Min.   1st Qu.    Median      Mean   3rd Qu.      Max.      NA&#39;s
     1.017     6.133    10.167    15.060    17.517 18143.900         1 </pre>
 </div>
 
@@ -21062,16 +21065,16 @@ Jwh2AAAAOkGwAwAA0AmCHQAAgE78DZ93cJ3BRtXAAAAAAElFTkSuQmCC"
 
 
 <div class="output_text output_subarea ">
-<pre>wa$User.Type: 
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
-     NA      NA      NA     NaN      NA      NA       1 
------------------------------------------------------------- 
+<pre>wa$User.Type:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s
+     NA      NA      NA     NaN      NA      NA       1
+------------------------------------------------------------
 wa$User.Type: Customer
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-    1.022    15.514    25.086    43.907    45.572 15076.523 
------------------------------------------------------------- 
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max.
+    1.022    15.514    25.086    43.907    45.572 15076.523
+------------------------------------------------------------
 wa$User.Type: Subscriber
-    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.
    1.005    5.909    9.495   12.222   15.020 2833.882 </pre>
 </div>
 
@@ -21407,7 +21410,7 @@ WEBIgAWEBFhASIAFhARYQEiABYQEWEBIgAWEBFjw/wG8PpbjPyp2kQAAAABJRU5ErkJggg=="
   </div>
 </body>
 
- 
+
 
 
 </html>
